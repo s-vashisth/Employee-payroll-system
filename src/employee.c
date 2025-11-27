@@ -2,7 +2,7 @@
 #include "../Include/employee.h"
 
 
-// Function to add a new employee
+
 void addEmployee(struct Employee emp[], int *count) {
     if (*count >= MAX) {
         printf("Cannot add more employees.\n");
