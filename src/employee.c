@@ -18,7 +18,7 @@ void addEmployee(struct Employee emp[], int *count) {
     printf("Enter Basic Salary: ");
     scanf("%f", &emp[*count].basicSalary);
 
-    // Salary calculations
+    
     emp[*count].houseRentAllowance = emp[*count].basicSalary * 0.20;
     emp[*count].dearnessAllowance  = emp[*count].basicSalary * 0.15;
     emp[*count].providentFund      = emp[*count].basicSalary * 0.12;
@@ -33,7 +33,7 @@ void addEmployee(struct Employee emp[], int *count) {
     printf("Employee added successfully!\n");
 }
 
-// Function to view payroll of all employees
+
 void viewEmployees(struct Employee emp[], int count) {
     if (count == 0) {
         printf("No employees to display.\n");
